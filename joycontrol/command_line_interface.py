@@ -107,8 +107,7 @@ class ControllerCLI(CLI):
         print(', '.join(self.controller_state.button_state.get_available_buttons()))
         print()
         await super().cmd_help()
-
-    @staticmethod
+    #@staticmethod
     def _set_stick(stick, direction, value):
         if direction == 'center':
             stick.set_center()
